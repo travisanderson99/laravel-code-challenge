@@ -56,6 +56,8 @@ php artisan config:clear
 php artisan serve
 ```
 
+<img width="1367" alt="Screen Shot 2021-08-12 at 4 56 43 PM" src="https://user-images.githubusercontent.com/23561092/129275270-e488fec6-ab7d-4c46-82fd-f77f90ef0f0f.png">
+
 8. Login:
 
     **Email:** testuser@prepnetwork.com<br />
