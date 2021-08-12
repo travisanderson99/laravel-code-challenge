@@ -72,6 +72,15 @@
                                             href="Edit contact route here">
                                             Edit
                                         </a>
+                                        <form action="Delete contact route here" method="POST">
+                                            @csrf
+                                            <input type="hidden" name="_method" value="DELETE">
+                                            <button type="submit"
+                                                onclick="return confirm('Are you sure you to delete this contact?')"
+                                                class="dropdown-item text-danger">
+                                                Delete
+                                            </button>
+                                        </form>
                                     </div>
                                 </div>
                             </td>
