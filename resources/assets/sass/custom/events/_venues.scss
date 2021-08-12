@@ -1,0 +1,22 @@
+#venues {
+    background: rgba(28, 28, 28, 0.975);
+
+    .section-header {
+        color: #FFF;
+    }
+
+    #map {
+        min-height: 300px;
+        border-radius: 10px;
+    }
+
+    ul {
+        li {
+            border-bottom: 1px solid rgb(236, 235, 235);
+
+            &:last-of-type {
+                border-bottom: none;
+            }
+        }
+    }
+}

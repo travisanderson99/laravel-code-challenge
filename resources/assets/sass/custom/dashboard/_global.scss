@@ -1,0 +1,142 @@
+.coach-dashboard {
+    a {
+        color: var(--program-primary);
+
+        &:hover {
+            color: var(--program-primary) !important;
+        }
+
+        &:focus {
+            color: var(--program-primary) !important;
+        }
+
+        &:active {
+            background: none;
+        }
+
+        &:before {
+            background-color: var(--program-primary);
+        }
+    }
+
+    .bg-primary {
+        background-color: var(--program-primary) !important;
+    }
+
+    .btn-primary {
+        background-color: var(--program-primary) !important;
+        border-color: var(--program-primary) !important;
+        color: #FFF !important;
+
+        &:hover {
+            color: #FFF !important;
+        }
+    }
+
+    .modal {
+        .block-header {
+            background-color: var(--program-primary) !important;
+        }
+    }
+
+    .text-primary {
+        color: var(--program-primary) !important;
+    }
+
+    .simplebar-scroll-content {
+        .program-header {
+            background-color: hsla(0,0%,100%,.05) !important;
+            padding: .6rem 1.25rem;
+            text-align: center;
+        }
+    }
+
+    .nav {
+        .nav-item {
+            .nav-link {
+                color: #373737 !important;
+
+                &.active {
+                    box-shadow: inset 0 -2px var(--program-primary) !important;
+                }
+
+                &:hover {
+                    box-shadow: inset 0 -2px var(--program-primary) !important;
+                }
+            }
+        }
+    }
+
+    table {
+
+        thead {
+            background: var(--program-primary);
+            color: #FFF;
+
+            th {
+                font-size: 0.7rem;
+                font-weight: 700;
+                white-space: nowrap;
+            }
+        }
+
+        tbody {
+
+            td {
+                padding: 0.7rem 0.55rem;
+
+                &.class {
+                    width: 100px;
+                    display: block;
+                }
+            }
+
+            .form-control {
+                font-size: 0.8rem;
+            }
+
+            input {
+                min-width: 55px;
+            }
+
+            .name {
+                min-width: 140px;
+            }
+
+            .height {
+                min-width: 80px;
+            }
+
+            .school {
+                min-width: 150px;
+            }
+
+            .email {
+                min-width: 175px;
+            }
+
+            .phone {
+                 min-width: 125px;
+            }
+        }
+    }
+
+    .dropdown-toggle {
+        font-size: .85rem;
+        color: #6d6d6d;
+    }
+
+    .btn-add-player {
+        font-size: .9rem;
+    }
+
+    .select2-container--default {
+        .select2-results__option--highlighted[aria-selected] {
+            background-color: var(--program-primary) !important;
+        }
+    }
+}
+
+.marker {
+    background-color: #FFFF00;
+}

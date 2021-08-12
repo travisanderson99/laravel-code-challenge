@@ -1,0 +1,133 @@
+#checklists {
+    overflow-x: scroll;
+
+    .event-checklist {
+        flex: 0 0 375px;
+        position: relative;
+
+        .block-header.sticky {
+            position: fixed;
+            width: 375px;
+            top: 60px;
+            z-index: 2;
+        }
+
+        .event-logo {
+            height: 55px;
+            width: auto;
+            margin: 15px;
+        }
+
+        .event-title {
+            font-size: 20px;
+            font-weight: 700;
+        }
+
+        ul {
+            list-style-type: none;
+            margin-left: 0;
+            padding-left: 0;
+
+            .section {
+                li {
+                    font-size: 13px;
+                    color: #151b26;
+                    border-bottom: 1px solid #efefef;
+                    padding: 10px;
+                    background: #FFF;
+                    border-radius: 8px;
+                    border: 1px solid #e8ecee;
+                    box-shadow: 0 1px 4px 0 rgb(21 27 38 / 8%);
+                    padding: 10px;
+                    margin-bottom: 14px;
+
+                    &.completed {
+                        color: #b4babf;
+
+                        .si, .avatar {
+                            opacity: .5;
+                        }
+                    }
+
+                    &.overdue {
+                        background: #ffe3e3;
+                        border: 1px solid #ffbbbb;
+                    }
+
+                    .avatar {
+                        align-items: center;
+                        background: center/cover #e4e4e4;
+                        border-radius: 50%;
+                        border: 1px solid #ccc;
+                        display: inline-flex;
+                        justify-content: center;
+                        position: relative;
+                        vertical-align: top;
+                        width: 24px;
+                        height: 24px;
+                        object-fit: cover;
+                    }
+                }
+            }
+        }
+
+        .completion {
+            position: absolute;
+            font-size: 14px;
+            top: -20px;
+            right: -10px;
+            background: #FFF;
+            border: 1px solid #ccc;
+            border-radius: 50%;
+            width: 55px;
+            height: 55px;
+            text-align: center;
+            z-index: 2;
+            display: flex;
+            justify-content: center;
+
+            span {
+                align-self: center;
+                font-weight: 600;
+            }
+        }
+
+        .complete {
+            cursor: pointer;
+
+            svg {
+                height: 16px;
+                min-height: 16px;
+                min-width: 16px;
+                width: 16px;
+
+                path {
+                    fill: #fff;
+                    stroke: #6f7782;
+                    stroke-width: 2px;
+                    transition: 200ms fill, 200ms stroke;
+                    pointer-events: none;
+                }
+
+                &:hover {
+                    path {
+                        fill: #e2fffa;
+                        stroke: #13a94d;
+                    }
+                }
+            }
+
+            .completed {
+                path.outer {
+                    fill: #25e8c8;
+                    stroke: #25e8c8;
+                }
+
+                path.check {
+                    fill: #FFF;
+                    stroke: #FFF;
+                }
+            }
+        }
+    }
+}

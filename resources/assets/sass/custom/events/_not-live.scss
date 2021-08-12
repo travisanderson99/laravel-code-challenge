@@ -1,0 +1,14 @@
+.not-live {
+    .event-logo {
+        width: 150px;
+        height: 150px;
+        background-position: 50% 50%;
+        background-repeat: no-repeat;
+        background-size: contain;
+        margin: 0 auto 1.25rem auto;
+
+        &.logo-short {
+            width: 250px;
+        }
+    }
+}

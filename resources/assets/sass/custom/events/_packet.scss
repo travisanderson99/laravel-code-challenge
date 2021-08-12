@@ -1,0 +1,101 @@
+#digital-packet {
+
+    .logo {
+        width: 225px;
+    }
+
+    .badge-secondary {
+        background: #e8e7e7;
+        font-size: 14px;
+    }
+
+    .filters {
+
+        @media(max-width: 768px) {
+            .filter-wrap {
+                flex-direction: column;
+            }
+
+            .btn-primary {
+                margin: 20px 0;
+            }
+        }
+
+        .filter {
+            flex: 1;
+            margin: 10px;
+
+            &.matchup {
+                flex: 25%;
+            }
+        }
+    }
+
+    .filter-results {
+        @media(max-width: 900px) {
+
+            .d-flex {
+                flex-direction: column;
+            }
+
+            p {
+                margin-bottom: 20px !important;
+            }
+        }
+
+        .badge {
+            white-space: normal;
+            line-height: 1.5;
+        }
+    }
+
+    .team-name {
+        font-weight: 700;
+        margin-top: 80px;
+    }
+
+    .division-header {
+        justify-content: center;
+        margin-top: 80px;
+
+        img {
+            width: 100px;
+            align-self: center;
+        }
+
+        h1 {
+            font-weight: 700;
+            align-self: center;
+        }
+    }
+
+    .table {
+        th {
+            font-size: 11px;
+            font-weight: 700;
+            color: #FFF;
+        }
+
+        td {
+            font-size: 14px;
+        }
+    }
+
+    @media(max-width: 1000px) {
+        table {
+            white-space: nowrap;
+        }
+    }
+
+    @media(max-width: 480px) {
+        .packet-header {
+            nav {
+                margin-top: 20px;
+
+                .btn {
+                    font-size: 13px;
+                }
+            }
+        }
+    }
+}

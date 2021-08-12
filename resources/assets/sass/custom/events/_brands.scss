@@ -1,0 +1,95 @@
+// Website name and colors
+$brands: ('prep-hoops': #F76517, 'prep-girls-hoops': #01B7FF, 'prep-dig': #175AAA, 'prep-redzone': #c11920, 'prep-hoops-next': #be32e0);
+
+@each $brand,
+$color in $brands {
+    .event-#{$brand} {
+        .btn-primary {
+            background-color: $color;
+            border-color: $color;
+
+            &:hover {
+                color: #FFF !important;
+                background-color: darken($color, 4%);
+            }
+
+            &:active {
+                background-color: $color !important;
+                border-color: $color !important;
+            }
+
+            &:focus {
+                box-shadow: none !important;
+            }
+
+            &.rounded {
+                border-radius: 20px;
+            }
+        }
+
+        .btn-alternate {
+            color: $color !important;
+        }
+
+        .site-nav li a {
+            &:hover:after {
+                background: $color;
+            }
+        }
+
+        #venues a, #description a, #details a {
+            color: $color;
+            font-weight: 600;
+        }
+
+        .header-separator {
+            background-color: $color;
+        }
+
+        .ticket-button {
+            background-color: $color;
+        }
+
+        .payment {
+            .payment-tab {
+                .payment-tab-trigger {
+                    input:checked~label:before {
+                        border-color: $color;
+                    }
+                    input:checked~label:after {
+                        background-color: $color;
+                    }
+                }
+            }
+        }
+
+        .select2-container--default {
+            .select2-results__option--highlighted[aria-selected] {
+                background-color: $color !important;
+            }
+        }
+
+        .form-group a {
+            color: $color !important;
+        }
+
+        .custom-control-input:checked ~ .custom-control-label::before {
+            background-color: $color !important;
+            border-color: $color !important;
+        }
+
+        .modal-content {
+            .block-header {
+                background-color: $color !important;
+            }
+
+            a {
+                color: $color !important;
+            }
+        }
+
+        #faq .block-content a {
+            color: $color;
+        }
+    }
+}

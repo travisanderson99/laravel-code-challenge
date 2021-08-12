@@ -1,0 +1,30 @@
+.flash-message {
+    position: fixed;
+    z-index: 999;
+    width: 30%;
+    top: 85%;
+    right: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    z-index: 9999;
+
+    @media(max-width: 480px) {
+        width: 75%;
+    }
+
+    >div {
+        border-radius: 4px;
+        text-align: center;
+        box-shadow: 0 8px 24px rgba(0, 0, 0, .1);
+        font-weight: 600;
+        background: #FFF;
+    }
+
+    .alert-success {
+        border: 1px solid #4BB543;
+    }
+
+    .alert-danger {
+        border: 1px solid #FF0000;
+    }
+}

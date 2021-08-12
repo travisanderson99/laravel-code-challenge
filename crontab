@@ -1,0 +1,1 @@
+* * * * * php /home/Travis/www/prepevents_stage schedule:run >> /dev/null 2>&1

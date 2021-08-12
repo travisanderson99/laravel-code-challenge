@@ -1,0 +1,141 @@
+.aap-upsell {
+	display: none;
+	input[type=checkbox]{
+		display: none;
+	}
+
+	.product-box{
+		cursor: pointer;
+	    display: inline-block;
+	    margin: 0;
+	    padding-bottom: 20px;
+	    border: 2px solid transparent;
+	    width: 100%;
+	}
+
+	#aapSelection, #aapPassword{
+		display: none;
+	}
+}
+
+.pricing-plan {
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    padding: 0 0 0px;
+    position: relative;
+    text-align: center;
+    margin: 0;
+    background: #fff;
+    border-radius: 6px;
+    max-width: 100%;
+    -webkit-box-shadow: 0 6px 8px 0 rgb(0 0 0 / 4%);
+    box-shadow: 0 6px 8px 0 rgb(0 0 0 / 4%);
+
+    .regular-price {
+	    position: relative;
+	    font-size: 16px;
+	    bottom: 1px;
+		&:after {
+		    position: absolute;
+		    content: "";
+		    left: 0;
+		    top: 50%;
+		    right: 0;
+		    border-color: currentcolor #ca0000 #ca0000;
+		    border-top: 2px solid #ca0000;
+		    -webkit-transform: rotate(8deg);
+		    -o-transform: rotate(8deg);
+		    transform: rotate(8deg);
+		}
+	}
+
+    .plan-label {
+	    padding: 15px;
+	    color: #fff;
+	    background: #828181;
+	    position: relative;
+	    border-radius: 6px 6px 0 0;
+
+	    h3 {
+		    font-size: 1.35rem;
+		    margin: 0;
+		    font-weight: 600;
+    		color: #fff;
+		}
+	}
+
+	.plan-price {
+	    background: #f5f4f4;
+	    font-size: 20px;
+	    color: #333;
+	    text-align: center;
+	    padding: 15px;
+
+	    figure {
+		    height: 60px;
+		    width: 125px;
+		    border-radius: 50%;
+		    margin: 5px auto 10px;
+		    img {
+			    width: 65%;
+			    height: 85%;
+			    padding: 0;
+			    display: block;
+			    margin: 5px auto 12px;
+			    -o-object-fit: contain;
+			    object-fit: contain;
+			}
+		}
+	}
+
+	.description {
+	    margin: 0 auto;
+	    padding: 20px;
+	    width: 100%;
+
+		p {
+		    color: #616061;
+		    opacity: .8;
+		    line-height: 1.5;
+		    font-size: 15px;
+		    margin: 0;
+		}
+	}
+
+	.button{
+		background-color: #fff;
+	    top: 0;
+	    padding: 8px 18px;
+	    line-height: 24px;
+	    position: relative;
+	    font-size: 17px;
+	    font-weight: 600;
+	    display: inline-block;
+	    -webkit-transition: all .2s ease-in-out;
+	    -o-transition: all .2s ease-in-out;
+	    transition: all .2s ease-in-out;
+	    cursor: pointer;
+	    overflow: hidden;
+	    border-radius: 100px;
+	    -webkit-box-shadow: 0 4px 12px hsl(228deg 2% 41% / 15%);
+	    box-shadow: 0 4px 12px hsl(228deg 2% 41% / 15%);
+	    width: 50%;
+	    margin: 15px auto 0;
+	    text-align: center;
+
+	    &:hover{
+	    	color: #fff;
+		}
+
+	}
+}
+
+
+@media(max-width: 1200px){
+	.pricing-plan {
+		&.monthly{
+			margin-bottom: 20px;
+		}
+	}
+}

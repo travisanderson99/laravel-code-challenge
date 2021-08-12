@@ -1,0 +1,24 @@
+#ncsa-optin {
+    img {
+        width: 175px;
+        height: auto;
+        object-fit: contain;
+        margin: 15px 15px 0 0;
+        align-self: start;
+    }
+
+    p.description {
+        font-size: 14px;
+    }
+
+    @media(max-width: 600px) {
+        .d-flex {
+            flex-direction: column;
+        
+            img {
+                margin-bottom: 15px;
+                width: 150px;
+            }
+        }
+    }
+}

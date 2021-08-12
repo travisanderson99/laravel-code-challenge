@@ -1,0 +1,21 @@
+.form-section{
+	background:#f5f6f5;
+	border-radius:5px;
+	padding:15px;
+	margin-bottom: 15px;
+
+	.sold-out{
+		opacity: 0;
+		cursor: default;
+	}
+
+	.fine-print{
+		float: right;
+    	font-size: 12px;
+    	line-height: 23px;
+	}
+
+	.bold{
+		font-weight: 600;
+	}
+}

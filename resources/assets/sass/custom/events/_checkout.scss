@@ -1,0 +1,106 @@
+#checkout-wrapper {
+    padding-top: 70px;
+
+    .block-title {
+        font-size: 1.6rem;
+        text-transform: capitalize;
+        font-weight: 700;
+        border-bottom: 1px solid #e3e3e3;
+        background: #f6f5f5;
+        padding: 15px;
+        letter-spacing: normal;
+        border-top-right-radius: 0.2rem;
+        border-top-left-radius: 0.2rem;
+    }
+
+    .order-details {
+        padding: 0;
+        list-style-type: none;
+
+        li {
+            font-size: 1.025rem;
+            padding-top: 12px;
+            display: flex;
+            justify-content: space-between;
+
+            &:first-of-type {
+                padding-top: 0;
+            }
+
+            span:first-of-type {
+                font-weight: 600;
+                width: 75%;
+                text-align: left;
+            }
+
+            span:last-of-type {
+                width: 25%;
+                text-align: right;
+            }
+        }
+
+        &.total {
+            border-top: 1px solid #e3e3e3;
+
+            li:first-of-type {
+                padding-top: 12px;
+            }
+        }
+    }
+
+    .attendee-count {
+        color: #403f3f;
+        padding: 15px;
+        border-bottom: 1px solid #e3e3e3;
+        text-align: center;
+        font-size: 1.5rem;
+
+        &:first-of-type {
+            padding: 5px 15px 15px 15px;
+        }
+    }
+
+    .coupon {
+        display: flex;
+
+        .btn-coupon {
+            border-top-left-radius: 0;
+            border-bottom-left-radius: 0;
+        }
+
+        input {
+            border-top-right-radius: 0;
+            border-bottom-right-radius: 0;
+        }
+    }
+}
+
+@media(min-width: 992px) {
+    #checkout-wrapper {
+        .cart {
+            .cart-wrap {
+                position: sticky;
+                top: 70px;
+                margin-bottom: 50px;
+            }
+        }
+    }
+}
+
+@media(max-width: 992px) {
+    #checkout-wrapper {
+        .cart {
+            order: 1;
+        }
+
+        .billing {
+            order: 2;
+        }
+    }
+}
+
+.checkout-legal{
+    padding: 20px;
+    font-size: 13px;
+    color: #848484;
+}

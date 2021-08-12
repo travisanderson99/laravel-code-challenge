@@ -1,0 +1,12 @@
+.invoice {
+    table {
+        .fa-check-circle, .fa-times-circle {
+            font-size: 1.15em;
+            line-height: 1.6;
+        }
+
+        .custom-control-label:before, .custom-control-label:after {
+            left: -1.55rem;
+        }
+    }
+}

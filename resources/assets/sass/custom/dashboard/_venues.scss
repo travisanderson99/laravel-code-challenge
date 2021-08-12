@@ -1,0 +1,64 @@
+#venues-map {
+    .sidebar-wrap {
+        flex-basis: 33%;
+
+        .sidebar {
+            height: 62vh;
+            overflow: scroll;
+
+            .venues-list {
+                li:nth-child(odd) {
+                    background: #fafafa;
+                }
+            }
+        }
+    }
+
+    #legend {
+        background: #FFF;
+        box-shadow: rgba(0, 0, 0, 0.3) 0px 1px 4px -1px;
+        border-radius: 2px;
+        z-index: 9999999 !important;
+        bottom: 10px !important;
+        left: 10px;
+        width: 180px;
+        height: 40px;
+
+        ul {
+            list-style-type: none;
+            align-items: center;
+
+            li {
+                flex: 1;
+                display: flex;
+
+                i {
+                    font-size: 17px;
+                    line-height: 1.25;
+                }
+            }
+        }
+    }
+}
+
+@media(max-width: 900px) {
+    #venues-map {
+        flex-direction: column;
+
+        .sidebar-wrap {
+            flex-basis: 100%;
+
+            .sidebar {
+                max-height: 40vh;
+
+                .venues-list {
+                    max-height: 350px;
+                }
+            }
+        }
+
+        #map {
+            min-height: 500px;
+        }
+    }
+}

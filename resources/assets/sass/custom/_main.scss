@@ -1,0 +1,54 @@
+//
+// Custom Main
+//
+// Add your own styles or override existing ones
+//
+// This file is included last, so you have access
+// to all Bootstrap and OneUI functions/mixins/styles etc
+// --------------------------------------------------
+
+// If you have many custom styles, you can create and import additional files
+// For example you can create _component1.scss and include it as follows:
+// @import 'component1';
+
+// Components
+@import 'components/autocomplete';
+@import 'components/cards';
+@import 'components/flash-message';
+@import 'components/icons';
+@import 'components/modals';
+@import 'components/slick';
+@import 'components/stripe';
+@import 'login/global';
+@import 'events/global';
+@import 'events/banner';
+@import 'events/brands';
+@import 'events/checkout';
+@import 'events/description';
+@import 'events/directors';
+@import 'events/faq';
+@import 'events/footer';
+@import 'events/header';
+@import 'events/helpful-links';
+@import 'events/ncsa';
+@import 'events/not-live';
+@import 'events/packet';
+@import 'events/payment';
+@import 'events/register';
+@import 'events/upsells';
+@import 'events/venues';
+@import 'events/misc';
+@import 'events/aap';
+@import 'invoices/global';
+@import 'dashboard/global';
+@import 'dashboard/checklist';
+@import 'dashboard/events';
+@import 'dashboard/revisions';
+@import 'dashboard/tasks';
+@import 'dashboard/venues';
+
+
+// Utilities
+@import 'utilities/autocomplete';
+@import 'utilities/backgrounds';
+@import 'utilities/buttons';

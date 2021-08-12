@@ -1,0 +1,46 @@
+.autocomplete-response {
+    position: relative;
+
+    .autocomplete-items {
+        position: absolute !important;
+        width: 100%;
+        border: 1px solid #e1e1e1;
+        border-radius: 0.25rem;
+        padding: 0;
+
+        li {
+            display: flex;
+            position: relative;
+            border-top: solid 1px rgb(223, 223, 223);
+            background: #FFF;
+            padding: 10px;
+            color: #333;
+            font-weight: 600;
+            font-size: 14px;
+
+            &:hover {
+                background-color: #f5f5f5;
+            }
+
+            &:first-of-type {
+                border-top: none;
+            }
+
+            figure {
+                height: 35px !important;
+                width: 35px !important;
+                margin: 0 !important;
+            }
+
+            a {
+                padding: 0.5rem 0.75rem;
+                text-decoration: none;
+                color: #333 !important;
+            }
+
+            a.empty-results {
+                padding: 0;
+            }
+        }
+    }
+}

@@ -1,0 +1,33 @@
+body.login, body.register {
+    background: url(/media/various/login-background.png) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+
+    .content {
+        box-shadow: rgba(60, 66, 87, 0.12) 0px 7px 14px 0px, rgba(0, 0, 0, 0.12) 0px 3px 6px 0px;
+        max-width: 500px;
+        margin: 7vh auto 0 auto;
+        border-radius: 10px;
+
+        &.register-form {
+            max-height: 585px;
+        }
+
+        .logo {
+            max-width: 175px;
+            margin: 15px auto 30px auto;
+        }
+
+        .btn-primary {
+            margin-top: 10px;
+        }
+    }
+
+    @media(max-width: 480px) {
+        .content {
+            max-width: 90%;
+        }
+    }
+}
